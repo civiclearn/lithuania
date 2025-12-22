@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lithuania-citizenship-test.com/sitemap.xml
