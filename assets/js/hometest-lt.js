@@ -181,6 +181,7 @@ realistiškų praktikos sesijų ir išsamios pažangos stebėsenos.
 <a href="https://civiclearn.com/lt/checkout.html" class="hero-primary-btn">
   Gauti pilną prieigą
 </a>
+    <p class="wc-curious" style="margin-top:0.9rem;font-size:0.85rem;line-height:1.45;text-align:center;"><a href="https://civiclearn.com/insights/hardest-citizenship-questions?utm_source=lithuania-home&amp;utm_medium=free-test&amp;utm_campaign=world-challenge" target="_blank" rel="noopener" style="color:inherit;opacity:0.75;text-decoration:underline;text-underline-offset:2px;">Tiesiog smalsu? Išbandykite sunkiausius pasaulio pilietybės klausimus (anglų kalba) →</a></p>
   `;
 
   return card;
