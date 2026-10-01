@@ -180,7 +180,6 @@ function createEndCard() {
 <a href="https://civiclearn.com/lt/checkout.html" class="hero-primary-btn">
   Get full access
 </a>
-    <p class="wc-curious" style="margin-top:0.9rem;font-size:0.85rem;line-height:1.45;text-align:center;"><a href="https://civiclearn.com/insights/hardest-citizenship-questions?utm_source=lithuania-home&amp;utm_medium=free-test&amp;utm_campaign=world-challenge" target="_blank" rel="noopener" style="color:inherit;opacity:0.75;text-decoration:underline;text-underline-offset:2px;">Just curious? Try the hardest citizenship test questions in the world →</a></p>
   `;
 
   return card;
