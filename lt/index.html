@@ -47,410 +47,272 @@
   }
   </script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/newhome.css">
-  <style>
-    #inline-progressbar {
-      background: linear-gradient(
-        90deg,
-        #006a44 0%,
-        #fdb913 50%,
-        #c1272d 100%
-      );
-    }
-  </style>
+  <link rel="stylesheet" href="https://civiclearn.com/assets/css/presale-home.css?v=2">
 </head>
-
 <body>
 
-
 <!-- HEADER -->
-<header class="cl-header">
-  <div class="cl-header-inner">
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="/lt/" class="logo logo-long"><img src="/assets/images/lt.svg" alt="" width="30" height="30"><span>Lietuvos pilietybės egzaminas</span></a>
 
-    <a href="/lt/pilietybes-egzaminas.html" class="cl-logo">
-      <img src="/assets/images/lt.svg" alt="Lietuva" />
-      <span>Lietuvos pilietybės egzaminas</span>
-    </a>
+    <button class="burger" type="button" aria-label="Meniu" aria-expanded="false" aria-controls="site-nav"
+      onclick="var o=document.getElementById('hdr').classList.toggle('menu-open');this.setAttribute('aria-expanded',o)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
 
-    <nav class="cl-nav">
+    <nav class="nav" id="site-nav">
       <a href="/lt/apie-egzamina.html">Apie egzaminą</a>
       <a href="/contact.html">Kontaktai</a>
       <a href="https://civiclearn.com/lt/login">Prisijungti</a>
+      <span class="lang"><strong>LT</strong> | <a href="/en/" hreflang="en">EN</a> | <a href="/ru/" hreflang="ru">RU</a></span>
     </nav>
 
-    <div class="cl-right">
-      <div class="cl-powered">
-        veikia su <span>CivicLearn</span>
+    <div class="hdr-right">
+      <div class="powered">
+        <div>veikia su <b>CivicLearn</b></div>
+        <a class="tp" href="https://www.trustpilot.com/review/civiclearn.com" target="_blank" rel="noopener" aria-label="CivicLearn „Trustpilot“: 4,5 iš 5">
+          <span class="tp-stars" aria-hidden="true">
+            <svg viewBox="0 0 25 25"><rect width="25" height="25" fill="#00b67a"/><path fill="#fff" d="M12.5 4.3l2.1 5.1 5.5.4-4.2 3.6 1.3 5.4-4.7-3-4.7 3 1.3-5.4-4.2-3.6 5.5-.4z"/></svg>
+            <svg viewBox="0 0 25 25"><rect width="25" height="25" fill="#00b67a"/><path fill="#fff" d="M12.5 4.3l2.1 5.1 5.5.4-4.2 3.6 1.3 5.4-4.7-3-4.7 3 1.3-5.4-4.2-3.6 5.5-.4z"/></svg>
+            <svg viewBox="0 0 25 25"><rect width="25" height="25" fill="#00b67a"/><path fill="#fff" d="M12.5 4.3l2.1 5.1 5.5.4-4.2 3.6 1.3 5.4-4.7-3-4.7 3 1.3-5.4-4.2-3.6 5.5-.4z"/></svg>
+            <svg viewBox="0 0 25 25"><rect width="25" height="25" fill="#00b67a"/><path fill="#fff" d="M12.5 4.3l2.1 5.1 5.5.4-4.2 3.6 1.3 5.4-4.7-3-4.7 3 1.3-5.4-4.2-3.6 5.5-.4z"/></svg>
+            <svg viewBox="0 0 25 25"><rect width="12.5" height="25" fill="#00b67a"/><rect x="12.5" width="12.5" height="25" fill="#dcdce6"/><path fill="#fff" d="M12.5 4.3l2.1 5.1 5.5.4-4.2 3.6 1.3 5.4-4.7-3-4.7 3 1.3-5.4-4.2-3.6 5.5-.4z"/></svg>
+          </span>
+          <span class="tp-word">Trustpilot</span>
+        </a>
       </div>
-
-      <a href="https://civiclearn.com/lt/checkout.html" class="cl-btn">
-        Gauti prieigą
-      </a>
+      <a href="https://civiclearn.com/lt/checkout.html" class="btn btn-primary">Gauti prieigą</a>
     </div>
-
   </div>
 </header>
 
+<main>
+
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-center">
-
-    <div class="hero-kicker">
-      <div class="hero-kicker-dot"></div>
-      Visapusiškas pasiruošimas Lietuvos pilietybės egzaminui
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Visapusiškas pasiruošimas Lietuvos pilietybės egzaminui</span>
+      <h1><span>Lietuvos pilietybės egzaminas:</span> pasiruoškite internetu – aiškiai ir užtikrintai.</h1>
+      <p class="hero-sub">Praktikuokitės su klausimais, paremtais Lietuvos Konstitucija. Tobulinkite mokymosi įpročius, stebėkite pažangą ir pasiruoškite egzamino dienai.</p>
+      <div class="hero-ctas">
+        <a href="https://civiclearn.com/lt/checkout.html" class="btn btn-primary" id="hero-cta">Pradėti pasiruošimą</a>
+        <a href="#questions-demo" class="btn btn-ghost">Peržiūrėti pavyzdinius klausimus</a>
+      </div>
+      <p class="hero-meta"><strong>29 €, vienkartinis mokėjimas</strong> · neribota prieiga · be prenumeratos</p>
+      <div class="rating">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <strong>Puikiai</strong>
+        <span>Pasitikima kandidatų, besiruošiančių Lietuvos pilietybei.</span>
+      </div>
     </div>
-
-    <h1 class="hero-title">
-      <span>Lietuvos pilietybės egzaminas:</span><br>
-      pasiruoškite internetu – aiškiai ir užtikrintai.
-    </h1>
-
-    <p class="hero-subtitle">
-      Praktikuokitės su klausimais, paremtais Lietuvos Konstitucija.
-      Tobulinkite mokymosi įpročius, stebėkite pažangą ir pasiruoškite egzamino dienai.
-    </p>
-
-    <div class="hero-actions">
-      <a href="https://civiclearn.com/lt/checkout.html" class="hero-primary-btn">Pradėti pasiruošimą</a>
-      <a href="#questions-demo" class="hero-secondary-btn">Peržiūrėti pavyzdinius klausimus</a>
+    <div class="hero-img">
+      <img src="/assets/images/devices-lt-en.webp" alt="Veikia visuose įrenginiuose" width="2959" height="1906" fetchpriority="high" decoding="async">
     </div>
-
-    <div class="hero-social">
-      <span class="rating-stars">★★★★★</span>
-      <span class="rating-word">Puikiai</span>
-      <span class="rating-subtext">Pasitikima kandidatų, besiruošiančių Lietuvos pilietybei.</span>
-    </div>
-
-    <div class="hero-image-wide">
-      <img src="/assets/images/devices-lt-en.webp" alt="Veikia visuose įrenginiuose">
-    </div>
-
   </div>
 </section>
-
 
 <!-- FEATURES -->
-<section>
-  <div class="section-heading">
-    <div class="section-kicker">Struktūruotas pasiruošimas</div>
-    <h2 class="section-title">Viskas, ko reikia sėkmingam pasiruošimui</h2>
-    <p class="section-lead">
-      Praktiniai klausimai, egzamino tipo sesijos ir aiški, sutelkta mokymosi patirtis.
-    </p>
-  </div>
-
-  <div class="features-grid">
-
-    <!-- CARD 1 -->
-    <div class="feature-card">
-      <div class="feature-icon">
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Struktūruotas pasiruošimas</span>
+      <h2>Viskas, ko reikia sėkmingam pasiruošimui</h2>
+      <p>Praktiniai klausimai, egzamino tipo sesijos ir aiški, sutelkta mokymosi patirtis.</p>
+    </div>
+    <div class="features">
+      <div class="feature">
         <img src="/assets/images/icons/1.svg" alt="">
+        <h3>Turinys pagal Konstituciją</h3>
+        <p>Praktiniai klausimai, paremti Lietuvos Konstitucija, apimantys valstybės sandarą, teises, pareigas ir pagrindinius principus.</p>
       </div>
-      <h3 class="feature-title">Turinys pagal Konstituciją</h3>
-      <p class="feature-text">
-        Praktiniai klausimai, paremti Lietuvos Konstitucija,
-        apimantys valstybės sandarą, teises, pareigas ir pagrindinius principus.
-      </p>
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="feature-card">
-      <div class="feature-icon">
+      <div class="feature">
         <img src="/assets/images/icons/2.svg" alt="">
+        <h3>Realistiškos praktikos sesijos</h3>
+        <p>Mokykitės spręsdami egzamino tipo klausimus su momentiniu grįžtamuoju ryšiu, kad aiškiai matytumėte, kur reikia tobulėti.</p>
       </div>
-      <h3 class="feature-title">Realistiškos praktikos sesijos</h3>
-      <p class="feature-text">
-        Mokykitės spręsdami egzamino tipo klausimus su momentiniu grįžtamuoju ryšiu,
-        kad aiškiai matytumėte, kur reikia tobulėti.
-      </p>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="feature-card">
-      <div class="feature-icon">
+      <div class="feature">
         <img src="/assets/images/icons/3.svg" alt="">
+        <h3>Pasitikėjimas egzamino dieną</h3>
+        <p>Mokykitės savo tempu, sumažinkite stresą ir eikite į pilietybės egzaminą ramiai bei pasiruošę.</p>
       </div>
-      <h3 class="feature-title">Pasitikėjimas egzamino dieną</h3>
-      <p class="feature-text">
-        Mokykitės savo tempu, sumažinkite stresą
-        ir eikite į pilietybės egzaminą ramiai bei pasiruošę.
-      </p>
     </div>
-
   </div>
 </section>
 
-
-<!-- INLINE TEST -->
-<div id="questions-demo">
-<section class="inline-test">
-  <div class="inline-test-inner">
-
-    <h2 class="inline-test-title">Išbandykite Lietuvos pilietybės egzamino klausimus nemokamai</h2>
-    <p class="inline-test-subtitle">Susipažinkite su klausimų formatu ir sudėtingumu.</p>
-
-    <div class="inline-test-cta-top">
-      <a href="https://civiclearn.com/lt/checkout.html" class="hero-primary-btn">
-        Pilna prieiga · 400 klausimų
-      </a>
-    </div>
-
-    <div class="inline-progress-container">
-      <div class="inline-test-inner">
-        <div id="inline-progress-text"></div>
-        <div class="inline-progressbar-wrapper">
-          <div id="inline-progressbar"></div>
-        </div>
+<!-- FREE QUESTIONS (rendered by /assets/js/hometest.js) -->
+<section class="section quiz" id="questions-demo">
+  <div class="wrap">
+    <div class="quiz-top">
+      <div class="section-head">
+        <span class="kicker">Nemokama praktika</span>
+        <h2>Išbandykite Lietuvos pilietybės egzamino klausimus nemokamai</h2>
+        <p>Susipažinkite su klausimų formatu ir sudėtingumu.</p>
       </div>
+      <a href="https://civiclearn.com/lt/checkout.html" class="btn btn-ghost">Pilna prieiga · 400 klausimų</a>
     </div>
-
-    <div class="inline-test-inner">
-      <div id="inline-test-questions"></div>
-	  
-	  
-	  
+    <div class="progress">
+      <div id="inline-progress-text"></div>
+      <div class="progress-track"><div id="inline-progressbar"></div></div>
     </div>
+    <div id="inline-test-questions"></div>
+  </div>
+</section>
 
 <!-- PRICING -->
-<section class="premium-pricing">
-  <div class="pricing-card">
-
-    <div class="pricing-top">
-      <span class="pricing-tag">Pilna prieiga</span>
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="kicker">Viena paprasta kaina</span>
+      <h2>Viskas įskaičiuota, visam laikui</h2>
     </div>
-
-    <div class="pricing-price">
-      <div class="amount">€ 29</div>
-      <div class="subtitle">Vienkartinis mokėjimas – neribota prieiga</div>
+    <div class="price-card">
+      <div class="price-left">
+        <span class="price-tag">Pilna prieiga</span>
+        <div class="price-amount">29 €<small>vieną kartą</small></div>
+        <p class="price-sub">Neribota prieiga. Sumokate vieną kartą ir mokotės tiek, kiek reikia.</p>
+        <a class="btn btn-primary" href="https://civiclearn.com/lt/checkout.html">Pradėti dabar</a>
+        <p class="price-note">Be prenumeratos · Aktyvavimas iškart</p>
+      </div>
+      <div class="price-right">
+        <h3>Ką gaunate</h3>
+        <ul class="checks">
+          <li>400 praktinių klausimų</li>
+          <li>Egzamino tipo praktikos sesijos</li>
+          <li>Teminės kartojimo veiklos</li>
+          <li>Dažniausiai suklystų klausimų stebėjimas</li>
+          <li>Išsami pažangos statistika</li>
+          <li>Garso skaitymo palaikymas</li>
+          <li>Mokymosi kortelės</li>
+          <li>Mokymosi vadovas</li>
+          <li>Veikia telefone, planšetėje ir kompiuteryje</li>
+          <li>Dienos praktikos testas</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="pricing-divider"></div>
+<!-- TESTIMONIALS -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="kicker">Mūsų naudotojai</span>
+      <h2>Kandidatai ruošėsi Lietuvos Konstitucijos egzaminui naudodamiesi platforma</h2>
+    </div>
+    <div class="quotes">
+      <figure class="quote">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>„Kasdien skirdavau šiek tiek laiko praktikai, ir tai labai padėjo. Laikant egzaminą klausimų stilius jau buvo pažįstamas, o jaudulio buvo gerokai mažiau.“</p>
+        <figcaption class="quote-by"><img src="/assets/images/avatar1.png" alt="" width="40" height="40">Sarah M.</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>„Teminė praktika padėjo greitai pastebėti silpnas vietas ir susitelkti į kartojimą. Aiški struktūra, naudinga pažangos stebėsena ir jokio bereikalingo blaškymosi.“</p>
+        <figcaption class="quote-by"><img src="/assets/images/avatar2.png" alt="" width="40" height="40">Imran A.</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>„Pradėjau ruoštis likus kelioms savaitėms iki egzamino. Aiški struktūra padėjo išlaikyti pastovumą, o praktikos sesijos suteikė tikrą pasiruošimo jausmą.“</p>
+        <figcaption class="quote-by"><img src="/assets/images/avatar3.png" alt="" width="40" height="40">Elena P.</figcaption>
+      </figure>
+    </div>
+    <p class="quotes-more">Daugiau atsiliepimų apie CivicLearn – <a href="https://www.trustpilot.com/review/civiclearn.com" target="_blank" rel="noopener">Trustpilot</a>.</p>
+  </div>
+</section>
 
-    <ul class="feature-list">
-      <li>400 praktinių klausimų</li>
-      <li>Egzamino tipo praktikos sesijos</li>
-      <li>Teminės kartojimo veiklos</li>
-      <li>Dažniausiai suklystų klausimų stebėjimas</li>
-      <li>Išsami pažangos statistika</li>
-      <li>Garso skaitymo palaikymas</li>
-      <li>Mokymosi kortelės</li>
-      <li>Mokymosi vadovas</li>
-      <li>Veikia telefone, planšetėje ir kompiuteryje</li>
-      <li>Dienos praktikos testas</li>
-      <li>Aktyvavimas iškart po apmokėjimo</li>
-    </ul>
+<!-- FAQ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap faq-grid">
+    <div class="section-head">
+      <span class="kicker">DUK</span>
+      <h2>Klausimai apie pasiruošimą Lietuvos Konstitucijos egzaminui</h2>
+      <p>Kitas klausimas? <a href="/contact.html">Parašykite mums</a>.</p>
+    </div>
+    <div class="faq-list">
+      <details><summary>Kiek laiko galioja prieiga?</summary><p>Prieiga yra neribota. Sumokate vieną kartą ir galite grįžti mokytis bet kada, kai tik prireikia.</p></details>
+      <details><summary>Ar tai tikslūs klausimai iš tikro Lietuvos pilietybės egzamino?</summary><p>Oficialūs pilietybės egzamino klausimai nėra viešai skelbiami kaip fiksuotas sąrašas. Platformos klausimai parengti remiantis Lietuvos Konstitucija ir oficialiais pilietiškumo reikalavimais bei atspindi egzamino stilių ir sudėtingumą.</p></details>
+      <details><summary>Ar egzistuoja oficialus klausimų sąrašas, kurį reikėtų išmokti mintinai?</summary><p>Oficialaus tikslių klausimų sąrašo nėra. Egzaminas vertina Konstitucijos principų ir pilietinių žinių supratimą, todėl struktūruota praktika visomis temomis yra veiksmingiausias pasiruošimo būdas.</p></details>
+      <details><summary>Kaip platforma padeda tobulėti?</summary><p>Teminė praktika, pakartotinis darbas su sudėtingais klausimais ir pažangos stebėsena padeda palaipsniui stiprinti žinias ir didinti pasitikėjimą egzamino dieną.</p></details>
+      <details><summary>Ar reikia diegti programėlę?</summary><p>Ne. Platforma veikia tiesiogiai naršyklėje telefone, planšetėje ar kompiuteryje.</p></details>
+      <details><summary>Ką daryti, jei negaliu mokytis kasdien?</summary><p>Trumpos mokymosi sesijos ir jūsų istorija leidžia išlikti nuosekliems net turint mažai laiko. Greitai matysite, kurias temas verta kartoti toliau.</p></details>
+    </div>
+  </div>
+</section>
 
-    <a class="pricing-cta" href="https://civiclearn.com/lt/checkout.html">
-      Pradėti dabar
+<!-- CLOSING CTA -->
+<section style="padding:0 0 40px">
+  <div class="wrap">
+    <div class="closing">
+      <div>
+        <h2>Pasiruošę išlaikyti egzaminą iš pirmo karto?</h2>
+        <p>400 praktinių klausimų, egzamino tipo sesijos ir pažangos stebėsena vienoje vietoje. 29 €, vieną kartą.</p>
+      </div>
+      <a href="https://civiclearn.com/lt/checkout.html" class="btn btn-primary">Pradėti pasiruošimą</a>
+    </div>
+  </div>
+</section>
+
+<!-- RANKING + DEVICES -->
+<section style="padding:24px 0 0">
+  <div class="wrap">
+    <a class="rank" href="https://civiclearn.com/passport-ranking">
+      <span class="rank-tag">PASŲ REITINGAS</span>
+      <span><strong>Su Lietuvos pasu galite gyventi ir dirbti visoje ES</strong> — 27 šalys, viena pilietybė.</span>
+      <span class="rank-go">Žiūrėti reitingą →</span>
     </a>
-
-  </div>
-
-  <div class="pricing-guarantee">
-    Vienkartinis mokėjimas. Be prenumeratos.
+    <div class="devices" aria-label="Suderinama su visais šiuolaikiniais įrenginiais ir naršyklėmis">
+      <span><img src="/assets/images/logos/windows.svg" alt="">Windows</span>
+      <span><img src="/assets/images/logos/macos.svg" alt="">macOS</span>
+      <span><img src="/assets/images/logos/android.svg" alt="">Android</span>
+      <span><img src="/assets/images/logos/ios.svg" alt="">iPhone / iPad</span>
+      <span><img src="/assets/images/logos/chrome.svg" alt="">Chrome</span>
+      <span><img src="/assets/images/logos/safari.svg" alt="">Safari</span>
+      <span><img src="/assets/images/logos/firefox.svg" alt="">Firefox</span>
+    </div>
   </div>
 </section>
 
+</main>
 
-<section class="cl-testimonials">
-  <div class="cl-testimonials-header">
-    <h2>Kandidatai ruošėsi Lietuvos Konstitucijos egzaminui naudodamiesi platforma</h2>
-    <p>Tikri atsiliepimai iš asmenų, besiruošiančių nuolatiniam gyvenimui ir pilietybei Lietuvoje</p>
-  </div>
-
-  <div class="cl-testimonials-grid">
-
-    <div class="cl-testimonial-card">
-      <div class="cl-testimonial-avatar">
-        <img src="/assets/images/avatar1.png" alt="">
-      </div>
-      <p class="cl-testimonial-text">
-        „Kasdien skirdavau šiek tiek laiko praktikai, ir tai labai padėjo. Laikant egzaminą klausimų stilius jau buvo pažįstamas, o jaudulio buvo gerokai mažiau.“
-      </p>
-      <div class="cl-testimonial-author">Sarah M.</div>
-    </div>
-
-    <div class="cl-testimonial-card">
-      <div class="cl-testimonial-avatar">
-        <img src="/assets/images/avatar2.png" alt="">
-      </div>
-      <p class="cl-testimonial-text">
-        „Teminė praktika padėjo greitai pastebėti silpnas vietas ir susitelkti į kartojimą. Aiški struktūra, naudinga pažangos stebėsena ir jokio bereikalingo blaškymosi.“
-      </p>
-      <div class="cl-testimonial-author">Imran A.</div>
-    </div>
-
-    <div class="cl-testimonial-card">
-      <div class="cl-testimonial-avatar">
-        <img src="/assets/images/avatar3.png" alt="">
-      </div>
-      <p class="cl-testimonial-text">
-        „Pradėjau ruoštis likus kelioms savaitėms iki egzamino. Aiški struktūra padėjo išlaikyti pastovumą, o praktikos sesijos suteikė tikrą pasiruošimo jausmą.“
-      </p>
-      <div class="cl-testimonial-author">Elena P.</div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="cl-faq">
-
-  <div class="section-heading">
-    <div class="section-kicker">Dažniausiai užduodami klausimai</div>
-    <h2 class="section-title">Klausimai apie pasiruošimą Lietuvos Konstitucijos egzaminui</h2>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Kiek laiko galioja prieiga?</span>
-    </div>
-    <div class="faq-answer">
-      <p>Prieiga yra neribota. Sumokate vieną kartą ir galite grįžti mokytis bet kada, kai tik prireikia.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Ar tai tikslūs klausimai iš tikro Lietuvos pilietybės egzamino?</span>
-    </div>
-    <div class="faq-answer">
-      <p>Oficialūs pilietybės egzamino klausimai nėra viešai skelbiami kaip fiksuotas sąrašas. Platformos klausimai parengti remiantis Lietuvos Konstitucija ir oficialiais pilietiškumo reikalavimais bei atspindi egzamino stilių ir sudėtingumą.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Ar egzistuoja oficialus klausimų sąrašas, kurį reikėtų išmokti mintinai?</span>
-    </div>
-    <div class="faq-answer">
-      <p>Oficialaus tikslių klausimų sąrašo nėra. Egzaminas vertina Konstitucijos principų ir pilietinių žinių supratimą, todėl struktūruota praktika visomis temomis yra veiksmingiausias pasiruošimo būdas.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Kaip platforma padeda tobulėti?</span>
-    </div>
-    <div class="faq-answer">
-      <p>Teminė praktika, pakartotinis darbas su sudėtingais klausimais ir pažangos stebėsena padeda palaipsniui stiprinti žinias ir didinti pasitikėjimą egzamino dieną.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Ar reikia diegti programėlę?</span>
-    </div>
-    <div class="faq-answer">
-      <p>Ne. Platforma veikia tiesiogiai naršyklėje telefone, planšetėje ar kompiuteryje.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span>Ką daryti, jei negaliu mokytis kasdien?</span>
-    </div>
-    <div class="faq-answer">
-      <p>Trumpos mokymosi sesijos ir jūsų istorija leidžia išlikti nuosekliems net turint mažai laiko. Greitai matysite, kurias temas verta kartoti toliau.</p>
-    </div>
-  </div>
-
-</section>
-
-<!-- PASSPORT RANKING STRIP — standalone (no articles section on this page). Lithuanian copy: native review recommended. -->
-<section style="padding:8px 24px 28px;">
-  <a href="https://civiclearn.com/passport-ranking"
-     style="display:flex;align-items:center;gap:14px;max-width:820px;margin:0 auto;padding:13px 22px;background:#fff;border:1px solid #e5e1da;border-left:3px solid #7c3aed;border-radius:12px;text-decoration:none;color:#1d2230;text-align:left;transition:border-color .15s,box-shadow .15s;"
-     onmouseover="this.style.borderColor='#7c3aed';this.style.boxShadow='0 4px 16px rgba(124,58,237,.12)'"
-     onmouseout="this.style.borderColor='#e5e1da';this.style.borderLeftColor='#7c3aed';this.style.boxShadow='none'">
-    <span style="flex:0 0 auto;background:#f5f0ff;color:#7c3aed;font-weight:700;font-size:.7rem;letter-spacing:.02em;padding:5px 10px;border-radius:6px;white-space:nowrap;">PASŲ REITINGAS</span>
-    <span style="flex:1 1 auto;min-width:0;font-size:.86rem;line-height:1.45;color:#555;text-align:left;">
-      <strong style="color:#1a1a2e;">Su Lietuvos pasu galite gyventi ir dirbti visoje ES</strong> — 27 šalys, viena pilietybė.
-    </span>
-    <span style="flex:0 0 auto;color:#7c3aed;font-weight:600;font-size:.84rem;white-space:nowrap;">Žiūrėti reitingą &rarr;</span>
-  </a>
-</section>
-
-<section class="compat-section">
-  <div class="compat-inner">
-
-<h2 class="compat-title">
-  Suderinama su visais šiuolaikiniais įrenginiais ir naršyklėmis
-</h2>
-
-    <div class="compat-grid">
-
-      <div class="compat-item">
-        <img src="/assets/images/logos/windows.svg" alt="Windows">
-        <p>Windows</p>
-      </div>
-
-      <div class="compat-item">
-        <img src="/assets/images/logos/macos.svg" alt="macOS">
-        <p>macOS</p>
-      </div>
-
-      <div class="compat-item">
-        <img src="/assets/images/logos/android.svg" alt="Android">
-        <p>Android</p>
-      </div>
-
-      <div class="compat-item">
-        <img src="/assets/images/logos/ios.svg" alt="iPhone / iPad">
-        <p>iPhone / iPad</p>
-      </div>
-
-      <div class="compat-item">
-        <img src="/assets/images/logos/chrome.svg" alt="Chrome">
-        <p>Chrome</p>
-      </div>
-
-      <div class="compat-item">
-        <img src="/assets/images/logos/safari.svg" alt="Safari">
-        <p>Safari</p>
-      </div>
-
-      <div class="compat-item">
-        <img src="/assets/images/logos/firefox.svg" alt="Firefox">
-        <p>Firefox</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
+<footer class="foot">
+  <div class="wrap">
     <div>© 2026 lithuania-citizenship-test.com – „CivicLearn“ tinklo dalis.</div>
-    <div class="footer-links">
+    <nav>
       <a href="https://civiclearn.com/insights">Insights</a>
       <a href="/lt/apie-egzamina.html">Apie egzaminą</a>
       <a href="/contact.html">Kontaktai</a>
       <a href="/privacy-policy.html">Privatumas</a>
-      <a href="/refund-policy.html"">Grąžinimai</a>
+      <a href="/refund-policy.html">Grąžinimai</a>
       <a href="/terms-and-conditions.html">Taisyklės</a>
       <a href="/cookie-policy.html">Slapukai</a>
-    </div>
+    </nav>
   </div>
 </footer>
 
-<!-- Questions remain wherever they are defined (hometest.js), unchanged on purpose -->
-<script src="/assets/js/hometest-lt.js"></script>
-<script>
-document.querySelectorAll(".faq-item").forEach(item => {
-  const q = item.querySelector(".faq-question");
-  q.addEventListener("click", () => {
-    document.querySelectorAll(".faq-item").forEach(i => {
-      if (i !== item) i.classList.remove("open");
-    });
-    item.classList.toggle("open");
-  });
-});
-</script>
+<!-- Mobile sticky CTA (appears once the hero button scrolls away, hides over pricing) -->
+<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+  <span><b>29 €, vieną kartą</b>Neribota prieiga</span>
+  <a href="https://civiclearn.com/lt/checkout.html" class="btn btn-primary" tabindex="-1">Pradėti</a>
+</div>
 
+<script src="/assets/js/hometest-lt.js"></script>
+<script src="https://civiclearn.com/assets/js/presale-quiz.js?v=1"></script>
+<script>
+(function(){
+  var s=document.getElementById('sticky-cta'), h=document.getElementById('hero-cta'), p=document.getElementById('pricing'), q=document.getElementById('questions-demo');
+  if(!('IntersectionObserver' in window)||!s||!h) return;
+  var heroGone=false, priceVisible=false, quizVisible=false;
+  function upd(){var on=heroGone&&!priceVisible&&!quizVisible;s.classList.toggle('show',on);s.setAttribute('aria-hidden',on?'false':'true');}
+  new IntersectionObserver(function(e){heroGone=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;upd();}).observe(h);
+  if(p) new IntersectionObserver(function(e){priceVisible=e[0].isIntersecting;upd();},{threshold:.15}).observe(p);
+  if(q) new IntersectionObserver(function(e){quizVisible=e[0].isIntersecting;upd();},{threshold:.05}).observe(q);
+})();
+</script>
 </body>
 </html>
